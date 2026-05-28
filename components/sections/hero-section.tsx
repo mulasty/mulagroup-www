@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Globe } from "lucide-react";
 import { motion } from "framer-motion";
@@ -10,13 +9,16 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden py-20 md:py-32">
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/hero-bg.jpg"
-          alt="Tło technologiczne"
-          fill
-          className="object-cover opacity-20"
-          priority
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover opacity-25"
+          poster="/images/hero-bg.jpg"
+        >
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
       </div>
       <div className="container relative z-10 mx-auto px-4 md:px-6">

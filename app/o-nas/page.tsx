@@ -33,12 +33,16 @@ export default function AboutPage() {
 
           <FadeIn delay={0.12}>
             <div className="relative h-56 md:h-72 rounded-2xl overflow-hidden border border-border mb-12">
-              <Image
-                src="/images/about-team.jpg"
-                alt="Zespół MulaGroup przy pracy"
-                fill
-                className="object-cover"
-              />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 h-full w-full object-cover"
+                poster="/images/about-team.jpg"
+              >
+                <source src="/videos/about-video.mp4" type="video/mp4" />
+              </video>
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
             </div>
           </FadeIn>

@@ -5,8 +5,20 @@ import { processSteps } from "@/lib/data";
 
 export function ProcessSection() {
   return (
-    <section className="py-20 md:py-28 bg-card/50">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="relative py-20 md:py-28 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover opacity-15"
+        >
+          <source src="/videos/process-video.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-card/80" />
+      </div>
+      <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
             Proces tworzenia stron www
