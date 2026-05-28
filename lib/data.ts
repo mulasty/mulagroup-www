@@ -32,6 +32,53 @@ export const services = [
     description:
       "Projektujemy i wdrażamy strony internetowe od prostych wizytówek po rozbudowane sklepy e-commerce. Każdy projekt tworzymy z myślą o SEO, wydajności i konwersji. Wspieramy WordPress, Next.js oraz rozwiązania dedykowane.",
     icon: "Globe",
+    features: [
+      "Indywidualny projekt graficzny (bez szablonów)",
+      "Responsywność na komórki, tablety i desktop",
+      "Optymalizacja SEO i Core Web Vitals",
+      "Panel CMS do samodzielnej edycji treści",
+      "Integracje: analityka, formularze, mapy, media społecznościowe",
+      "Wdrożenie na serwerze + SSL + backupy",
+    ],
+    packages: [
+      {
+        name: "Wizytówka",
+        price: "od 2 900 zł",
+        description: "Idealna dla małych firm i freelancerów",
+        includes: [
+          "Do 5 podstron",
+          "Projekt graficzny",
+          "Podstawowe SEO",
+          "Formularz kontaktowy",
+          "Wsparcie 30 dni",
+        ],
+      },
+      {
+        name: "Biznes",
+        price: "od 6 900 zł",
+        description: "Dla firm rozwijających działalność online",
+        includes: [
+          "Do 15 podstron",
+          "Zaawansowany design + animacje",
+          "Blog + system CMS",
+          "Integracja Google Analytics / GA4",
+          "Wsparcie 90 dni",
+        ],
+        highlighted: true,
+      },
+      {
+        name: "Premium",
+        price: "od 14 900 zł",
+        description: "Rozbudowane rozwiązania i aplikacje webowe",
+        includes: [
+          "Nielimitowane podstrony",
+          "Next.js / React + API",
+          "Panel administracyjny na zamówienie",
+          "Integracje zewnętrzne (CRM, ERP)",
+          "Wsparcie 12 miesięcy",
+        ],
+      },
+    ],
   },
   {
     id: "seo",
@@ -40,6 +87,53 @@ export const services = [
     description:
       "Kompleksowa optymalizacja stron pod kątem wyszukiwarek: audyt SEO, budowa strategii linkowania, optymalizacja techniczna i contentowa. Działamy lokalnie i ogólnopolsko.",
     icon: "Search",
+    features: [
+      "Szczegółowy audyt SEO na start",
+      "Analiza konkurencji i słów kluczowych",
+      "Optymalizacja techniczna i struktury",
+      "Content marketing i copywriting SEO",
+      "Link building i budowa autorytetu",
+      "Miesięczne raporty i monitoring pozycji",
+    ],
+    packages: [
+      {
+        name: "Lokalne",
+        price: "od 1 200 zł / msc",
+        description: "Dla firm usługowych działających lokalnie",
+        includes: [
+          "Opieka nad Google Business Profile",
+          "Do 15 fraz lokalnych",
+          "Optymalizacja techniczna",
+          "2 teksty miesięcznie",
+          "Raport pozycji",
+        ],
+      },
+      {
+        name: "Ogólnopolskie",
+        price: "od 2 900 zł / msc",
+        description: "Dla e-commerce i firm zasięgiem krajowym",
+        includes: [
+          "Do 50 fraz kluczowych",
+          "Pełna optymalizacja on-page",
+          "4–6 tekstów miesięcznie",
+          "Link building",
+          "Raport + konsultacja",
+        ],
+        highlighted: true,
+      },
+      {
+        name: "Enterprise",
+        price: "wycena indywidualna",
+        description: "Dla dużych marek i portali",
+        includes: [
+          "Nielimitowane frazy",
+          "Dedykowany specjalista SEO",
+          "Content + link building + PR",
+          "Analityka zaawansowana",
+          "Weekly sync + strategia kwartalna",
+        ],
+      },
+    ],
   },
   {
     id: "ads",
@@ -48,6 +142,52 @@ export const services = [
     description:
       "Tworzymy i prowadzimy kampanie PPC dopasowane do budżetu i celów biznesowych. Dbamy o jak najniższy koszt pozyskania klienta i mierzalne wyniki.",
     icon: "Megaphone",
+    features: [
+      "Strategia mediów płatnych dopasowana do celu",
+      "Konfiguracja i optymalizacja Google Ads",
+      "Meta Ads (Facebook, Instagram)",
+      "Remarketing i lookalike audiences",
+      "Landing page’e pod kampanie",
+      "Tygodniowe raporty i rekomendacje",
+    ],
+    packages: [
+      {
+        name: "Start",
+        price: "od 1 500 zł + budżet",
+        description: "Małe kampanie testowe i lokalne",
+        includes: [
+          "1 kanał (Google lub Meta)",
+          "Do 3 grup reklam",
+          "Podstawowy remarketing",
+          "Raport miesięczny",
+        ],
+      },
+      {
+        name: "Growth",
+        price: "od 3 500 zł + budżet",
+        description: "Wielokanałowe kampanie w skali średniej",
+        includes: [
+          "2 kanały (Google + Meta)",
+          "Landing page pod kampanię",
+          "A/B testy kreacji",
+          "Zaawansowany remarketing",
+          "Raport + optymalizacja co tydzień",
+        ],
+        highlighted: true,
+      },
+      {
+        name: "Scale",
+        price: "wycena indywidualna",
+        description: "Duże budżety i złożona lejka",
+        includes: [
+          "Wszystkie kanały (Google, Meta, TikTok, LinkedIn)",
+          "Dedykowany account manager",
+          "Dynamiczne remarketing + CAPI",
+          "Analityka i attibution modeling",
+          "Kwartalna strategia i audyt",
+        ],
+      },
+    ],
   },
   {
     id: "automation",
@@ -56,6 +196,53 @@ export const services = [
     description:
       "Wdrażamy rozwiązania automatyzacyjne: integracje systemów, przepływy pracy wspomagane AI, chatboty i dashboardy analityczne. Redukujemy ręczną pracę i przyspieszamy operacje.",
     icon: "Bot",
+    features: [
+      "Integracja CRM, e-mail i komunikatorów",
+      "Chatboty AI (OpenAI, Claude) na stronę i Messengera",
+      "Automatyczna klasyfikacja i routing leadów",
+      "Generowanie treści i raportów przez AI",
+      "Workflowy w Make.com, n8n lub dedykowane",
+      "Dashboardy analityczne (Looker, custom)",
+    ],
+    packages: [
+      {
+        name: "Podstawowa",
+        price: "od 2 400 zł",
+        description: "Pojedynczy przepływ lub integracja",
+        includes: [
+          "1 workflow automatyzacji",
+          "Integracja 2–3 aplikacji",
+          "Podstawowy chatbot FAQ",
+          "Dokumentacja i szkolenie",
+          "Wsparcie 30 dni",
+        ],
+      },
+      {
+        name: "Rozszerzona",
+        price: "od 6 900 zł",
+        description: "Wieloetapowa automatyzacja z AI",
+        includes: [
+          "Do 5 workflow’ów",
+          "Chatbot AI z pamięcią kontekstu",
+          "Integracja z CRM / e-mail",
+          "Raportowanie i powiadomienia",
+          "Wsparcie 90 dni",
+        ],
+        highlighted: true,
+      },
+      {
+        name: "Enterprise AI",
+        price: "wycena indywidualna",
+        description: "Dedykowane rozwiązania i RAG",
+        includes: [
+          "Nielimitowane workflow’y",
+          "Asystent AI z bazą wiedzy (RAG)",
+          "Fine-tuning modelu pod firmę",
+          "API i integracje na zamówienie",
+          "Wsparcie SLA 12 miesięcy",
+        ],
+      },
+    ],
   },
   {
     id: "audit",
@@ -64,6 +251,52 @@ export const services = [
     description:
       "Przeprowadzamy audyty techniczne stron, serwerów i aplikacji. Szukamy słabych punktów, optymalizujemy wydajność i przygotowujemy mapę naprawczą.",
     icon: "ShieldCheck",
+    features: [
+      "Audyt wydajności (Core Web Vitals, Lighthouse)",
+      "Audyt bezpieczeństwa (SSL, nagłówki, podatności)",
+      "Analiza architektury i kodu",
+      "Audyt SEO technicznego",
+      "Testy dostępności WCAG",
+      "Raport z priorytetami i rekomendacjami",
+    ],
+    packages: [
+      {
+        name: "Szybki audyt",
+        price: "od 990 zł",
+        description: "Wstępna diagnoza w 48h",
+        includes: [
+          "Lighthouse + Core Web Vitals",
+          "Podstawowy audyt SEO",
+          "Lista 10 priorytetów",
+          "Krótka rozmowa wynikowa",
+        ],
+      },
+      {
+        name: "Kompleksowy",
+        price: "od 3 900 zł",
+        description: "Pełna analiza z mapą naprawczą",
+        includes: [
+          "Wydajność + bezpieczeństwo + SEO",
+          "Analiza kodu i architektury",
+          "Dostępność WCAG 2.1",
+          "Szczegółowy raport PDF",
+          "Wdrożenie poprawek (do 10h)",
+        ],
+        highlighted: true,
+      },
+      {
+        name: "Enterprise",
+        price: "wycena indywidualna",
+        description: "Dla dużych systemów i aplikacji",
+        includes: [
+          "Audyt infrastruktury i CI/CD",
+          "Testy penetracyjne",
+          "Architektura cloud i kosztów",
+          "Dedykowany ekspert bezpieczeństwa",
+          "Wsparcie przy wdrożeniu zmian",
+        ],
+      },
+    ],
   },
 ];
 
