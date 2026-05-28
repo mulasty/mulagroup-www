@@ -1,12 +1,18 @@
 "use client";
 
-import Image from "next/image";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { partner } from "@/lib/data";
-import { ExternalLink, Mail, Phone } from "lucide-react";
+import { ExternalLink, Mail, Phone, Volume2, VolumeX } from "lucide-react";
+
+const VIDEO_ID = "Q64fpFz0UAU";
 
 export function PartnerSection() {
+  const [muted, setMuted] = useState(true);
+
+  const embedUrl = `https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&loop=1&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&playlist=${VIDEO_ID}&mute=${muted ? 1 : 0}`;
+
   return (
     <section className="py-20 md:py-28">
       <div className="container mx-auto px-4 md:px-6">
@@ -18,14 +24,34 @@ export function PartnerSection() {
           className="max-w-4xl mx-auto"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden border border-border">
-              <Image
-                src="/images/krx-creative.jpg"
-                alt="Kreatywna współpraca z KrXProduce"
-                fill
-                className="object-cover"
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-border bg-black">
+              <iframe
+                key={embedUrl}
+                src={embedUrl}
+                title="KrXProduce - portfolio"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+              <div className="absolute bottom-3 right-3 z-10">
+                <Button
+                  size="sm"
+                  variant="secondary"
+                  className="gap-1.5 bg-background/80 backdrop-blur-sm hover:bg-background"
+                  onClick={() => setMuted((m) => !m)}
+                >
+                  {muted ? (
+                    <>
+                      <VolumeX className="h-4 w-4" /> Włącz dźwięk
+                    </>
+                  ) : (
+                    <>
+                      <Volume2 className="h-4 w-4" /> Wyłącz dźwięk
+                    </>
+                  )}
+                </Button>
+              </div>
             </div>
             <div className="text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
