@@ -12,7 +12,7 @@ export function ProcessSection() {
           loop
           muted
           playsInline
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
+          className="absolute inset-0 h-full w-full object-cover opacity-80"
         >
           <source src="/videos/process-video.mp4" type="video/mp4" />
         </video>
