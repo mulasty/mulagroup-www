@@ -4,6 +4,7 @@ import { WhyUsSection } from "@/components/sections/why-us-section";
 import { ProcessSection } from "@/components/sections/process-section";
 import { StatsSection } from "@/components/sections/stats-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
+import { PortfolioSection } from "@/components/sections/portfolio-section";
 import { PartnerSection } from "@/components/sections/partner-section";
 import { CtaSection } from "@/components/sections/cta-section";
 
@@ -14,6 +15,7 @@ export default function HomePage() {
       <ServicesSection />
       <WhyUsSection />
       <ProcessSection />
+      <PortfolioSection />
       <StatsSection />
       <TestimonialsSection />
       <PartnerSection />

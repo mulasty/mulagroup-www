@@ -19,6 +19,7 @@ export const partner = {
 export const navLinks = [
   { label: "Strona główna", href: "/" },
   { label: "Usługi", href: "/uslugi" },
+  { label: "Realizacje", href: "/realizacje" },
   { label: "O nas", href: "/o-nas" },
   { label: "Kontakt", href: "/kontakt" },
 ];
@@ -143,6 +144,69 @@ export const stats = [
   { value: "200+", label: "zrealizowanych projektów" },
   { value: "50+", label: "zadowolonych klientów" },
   { value: "100%", label: "zaangażowania" },
+];
+
+export const projects = [
+  {
+    id: "projekt-sklep-ekonomiczny",
+    title: "Sklep e-commerce — branża odzieżowa",
+    category: "sklepy",
+    categoryLabel: "Sklepy internetowe",
+    description:
+      "Kompletny sklep internetowy z integracją płatności, automatycznymi mailami i optymalizacją pod SEO. Wzrost konwersji o 35% w pierwszym kwartale.",
+    image: "/images/service-webdev.jpg",
+    tags: ["WooCommerce", "WordPress", "SEO"],
+  },
+  {
+    id: "projekt-strona-budowlana",
+    title: "Strona firmowa — usługi budowlane",
+    category: "strony-www",
+    categoryLabel: "Strony WWW",
+    description:
+      "Nowoczesna strona wizytówka z portfolio realizacji, formularzem wyceny i blogiem branżowym. Wdrożenie w 14 dni.",
+    image: "/images/service-seo.jpg",
+    tags: ["Next.js", "Tailwind", "CMS"],
+  },
+  {
+    id: "projekt-seo-lokalne",
+    title: "Pozycjonowanie lokalne — klinika medycyny estetycznej",
+    category: "seo",
+    categoryLabel: "SEO",
+    description:
+      "Kompleksowa optymalizacja lokalna: Google Business Profile, treści lokalne, link building. Top 3 na 12 kluczowych fraz w ciągu 4 miesięcy.",
+    image: "/images/service-ads.jpg",
+    tags: ["SEO lokalne", "Content", "Analityka"],
+  },
+  {
+    id: "projekt-automatyzacja-crm",
+    title: "Automatyzacja CRM — firma consultingowa",
+    category: "automatyzacja",
+    categoryLabel: "Automatyzacja",
+    description:
+      "Wdrożenie przepływów automatyzacyjnych: lead scoring, automatyczne maile, raportowanie. Oszczędność 20h pracy tygodniowo.",
+    image: "/images/service-automation.jpg",
+    tags: ["Make.com", "HubSpot", "AI"],
+  },
+  {
+    id: "projekt-google-ads-b2b",
+    title: "Kampanie Google Ads — B2B SaaS",
+    category: "reklamy",
+    categoryLabel: "Reklamy",
+    description:
+      "Strategia i optymalizacja kampanii Search & Display. Obniżenie CPA o 40% przy jednoczesnym wzroście liczby leadów o 60%.",
+    image: "/images/service-audit.jpg",
+    tags: ["Google Ads", "GA4", "Landing page"],
+  },
+  {
+    id: "projekt-strona-nextjs",
+    title: "Aplikacja webowa — startup fintech",
+    category: "strony-www",
+    categoryLabel: "Strony WWW",
+    description:
+      "Full-stackowa aplikacja w Next.js z autoryzacją, dashboardem analitycznym i integracjami bankowymi. Performance 98/100 w Lighthouse.",
+    image: "/images/hero-bg.jpg",
+    tags: ["Next.js", "TypeScript", "PostgreSQL"],
+  },
 ];
 
 export const testimonials = [
