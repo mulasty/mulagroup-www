@@ -12,11 +12,11 @@ export function ProcessSection() {
           loop
           muted
           playsInline
-          className="absolute inset-0 h-full w-full object-cover opacity-15"
+          className="absolute inset-0 h-full w-full object-cover opacity-40"
         >
           <source src="/videos/process-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-card/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-card/60 via-card/40 to-card/70" />
       </div>
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-14">

@@ -43,7 +43,7 @@ export default function AboutPage() {
               >
                 <source src="/videos/about-video.mp4" type="video/mp4" />
               </video>
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
             </div>
           </FadeIn>
 
