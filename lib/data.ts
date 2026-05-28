@@ -144,3 +144,27 @@ export const stats = [
   { value: "50+", label: "zadowolonych klientów" },
   { value: "100%", label: "zaangażowania" },
 ];
+
+export const testimonials = [
+  {
+    name: "Michał K.",
+    role: "Właściciel, sklep e-commerce",
+    content:
+      "Współpraca z MulaGroup przebiegła wyjątkowo sprawnie. Strona działa błyskawicznie, a widoczność w Google wzrosła już w pierwszym miesiącu. Polecam każdemu, kto szuka profesjonalistów.",
+    rating: 5,
+  },
+  {
+    name: "Anna W.",
+    role: "Dyrektor Marketingu, firma usługowa",
+    content:
+      "Zespół MulaGroup zaprojektował dla nas nowoczesną stronę i przejął kampanie Google Ads. Efekt? Dwa razy więcej leadów przy niższym koszcie pozyskania. Świetna komunikacja i terminowość.",
+    rating: 5,
+  },
+  {
+    name: "Tomasz B.",
+    role: "CEO, startup technologiczny",
+    content:
+      "Wdrożenie automatyzacji AI zaoszczędziło naszemu zespołowi kilkanaście godzin tygodniowo. MulaGroup nie tylko zna technologię, ale też rozumie biznes. To rzadkość.",
+    rating: 5,
+  },
+];
