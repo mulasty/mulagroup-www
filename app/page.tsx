@@ -5,6 +5,7 @@ import { ProcessSection } from "@/components/sections/process-section";
 import { StatsSection } from "@/components/sections/stats-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { PortfolioSection } from "@/components/sections/portfolio-section";
+import { FaqSection } from "@/components/sections/faq-section";
 import { PartnerSection } from "@/components/sections/partner-section";
 import { CtaSection } from "@/components/sections/cta-section";
 
@@ -19,6 +20,7 @@ export default function HomePage() {
       <StatsSection />
       <TestimonialsSection />
       <PartnerSection />
+      <FaqSection />
       <CtaSection />
     </>
   );

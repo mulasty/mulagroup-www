@@ -209,6 +209,39 @@ export const projects = [
   },
 ];
 
+export const faq = [
+  {
+    question: "Ile trwa stworzenie strony internetowej?",
+    answer:
+      "Czas realizacji zależy od skali projektu. Prosta strona wizytówka jest gotowa w ciągu 7–14 dni, a rozbudowany sklep lub aplikacja może wymagać 4–8 tygodni. Na etapie wyceny dostajesz dokładny harmonogram.",
+  },
+  {
+    question: "Czy strona będzie widoczna w Google od samego początku?",
+    answer:
+      "Tak. Każdą stronę budujemy zgodnie z wytycznymi Google (Core Web Vitals, semantyczny HTML, meta dane, schema.org). Oznacza to, że jest gotowa do indeksowania od pierwszego dnia.",
+  },
+  {
+    question: "Czy mogę samodzielnie edytować treści na stronie?",
+    answer:
+      "Oczywiście. Strony oparte na WordPress lub naszym dedykowanym panelu CMS umożliwiają łatwą edycję tekstów, zdjęć i podstron bez znajomości programowania. Dodatkowo oferujemy szkolenie z obsługi.",
+  },
+  {
+    question: "Jaki jest koszt pozycjonowania SEO?",
+    answer:
+      "Cena zależy od konkurencyjności branży, zakresu fraz i stanu obecnej strony. Oferujemy pakiety od podstawowej optymalizacji lokalnej po pełną strategię narodową. Umów się na bezpłatny audyt, a przygotujemy dopasowaną ofertę.",
+  },
+  {
+    question: "Czy oferujecie wsparcie techniczne po wdrożeniu?",
+    answer:
+      "Tak. Oferujemy miesięczne pakiety administracyjne obejmujące aktualizacje, backupy, monitoring bezpieczeństwa i drobne zmiany na stronie. Działamy szybko — zazwyczaj reagujemy w ciągu 24h.",
+  },
+  {
+    question: "Czym różni się automatyzacja AI od zwykłych integracji?",
+    answer:
+      "Automatyzacja AI to nie tylko łączenie systemów, ale także inteligentne przetwarzanie danych — np. automatyczna klasyfikacja leadów, generowanie odpowiedzi, analiza sentimentu czy przewidywanie churn. Oszczędzamy Twój czas tam, gdzie standardowe integracje sięgają granic.",
+  },
+];
+
 export const testimonials = [
   {
     name: "Michał K.",
