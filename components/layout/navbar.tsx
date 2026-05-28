@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { navLinks } from "@/lib/data";
+import { navLinks, company } from "@/lib/data";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -28,6 +28,13 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
+          <a
+            href={`tel:${company.phoneRaw}`}
+            className="hidden lg:inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+          >
+            <Phone className="h-4 w-4" />
+            {company.phone}
+          </a>
           <Button asChild size="sm" className="ml-2">
             <Link href="/kontakt">Wyślij zapytanie</Link>
           </Button>
@@ -51,6 +58,14 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              <a
+                href={`tel:${company.phoneRaw}`}
+                className="inline-flex items-center gap-2 text-base font-medium text-primary hover:text-primary/80 transition-colors"
+                onClick={() => setOpen(false)}
+              >
+                <Phone className="h-4 w-4" />
+                {company.phone}
+              </a>
               <Button asChild className="mt-4">
                 <Link href="/kontakt" onClick={() => setOpen(false)}>
                   Wyślij zapytanie
