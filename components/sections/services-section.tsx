@@ -1,12 +1,21 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { services } from "@/lib/data";
 import { Icon } from "@/components/icon";
 import { ArrowRight } from "lucide-react";
+
+const serviceImages: Record<string, string> = {
+  webdev: "/images/service-webdev.jpg",
+  seo: "/images/service-seo.jpg",
+  ads: "/images/service-ads.jpg",
+  automation: "/images/service-automation.jpg",
+  audit: "/images/service-audit.jpg",
+};
 
 export function ServicesSection() {
   return (
@@ -30,7 +39,16 @@ export function ServicesSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full bg-background border-border hover:border-primary/40 transition-colors group">
+              <Card className="h-full bg-background border-border hover:border-primary/40 transition-colors group overflow-hidden">
+                <div className="relative h-40 w-full overflow-hidden">
+                  <Image
+                    src={serviceImages[service.id] || "/images/hero-bg.jpg"}
+                    alt={service.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
+                </div>
                 <CardHeader className="pb-3">
                   <div className="mb-3 inline-flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 text-primary">
                     <Icon name={service.icon as any} className="h-5 w-5" />

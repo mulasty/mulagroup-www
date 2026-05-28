@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/fade-in";
 import { company, partner } from "@/lib/data";
@@ -23,11 +24,23 @@ export default function AboutPage() {
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-center">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-10 text-center">
               {company.name} to zespół specjalistów łączących technologię,
               automatyzację i myślenie bezpieczeństwa w jeden praktyczny model
               dostarczania wartości.
             </p>
+          </FadeIn>
+
+          <FadeIn delay={0.12}>
+            <div className="relative h-56 md:h-72 rounded-2xl overflow-hidden border border-border mb-12">
+              <Image
+                src="/images/about-team.jpg"
+                alt="Zespół MulaGroup przy pracy"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+            </div>
           </FadeIn>
 
           <div className="grid gap-6 sm:grid-cols-2 mb-12">
